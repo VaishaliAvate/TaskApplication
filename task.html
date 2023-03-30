@@ -1,0 +1,48 @@
+<html>
+<head>
+<style>
+
+html {
+  padding: 0px 0;
+  background-color: #efefef;
+  
+}
+div {
+overflow: scroll;
+}
+.test {
+  width: 250px;
+ 
+  height: 250px;
+  border-radius: 25px;
+  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+}
+
+video {
+  width: 500px;
+  border-radius: 50%; 
+  height: 500px;
+  position: absolute;
+  top: -125px;
+  left: -125px;
+}
+</style>
+</head>
+<body>
+<script type="text/javascript">
+
+
+function myFunction() {
+
+ document.getElementById("myDIV").innerHTML = "You scrolled in div.";
+}
+
+</script>
+<div class="test" onscroll="myFunction()" id="myDIV">
+    <video width="320" height="240" controls autoplay="autoplay">
+      <source src="Testvideo.mp4" type="video/mp4">
+    
+    </video>
+  </div>
+  </body>
+  </html>
